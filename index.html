@@ -60,8 +60,9 @@
           <div class="">
             <h6>Privacy</h6>
             <a href="https://store.metagenics.com/privacy-policy#privacy_policy">Privacy Policy</a><br>
-            <a href="https://store.metagenics.com/privacy-policy-california">Privacy Policy for California Residents</a><br>
-            <a id="your-privacy-choices">Your Privacy Choices</a>
+            <a href="https://store.metagenics.com/privacy-policy-california">Privacy Policy for California
+              Residents</a><br>
+            <a href="#" id="your-privacy-choices" onclick="toggleBanner()">Your Privacy Choices</a>
           </div>
           <div class="">
             <h6>Customer Service</h6>
@@ -122,13 +123,22 @@
           Limit use of sensitive information
         </label>
       </div>
-      <button>
+      <button onclick="toggleBanner()">
         Confirm
       </button>
     </div>
   </div>
 
   <script>
+    function toggleBanner() {
+      const banner = document.getElementById("your-privacy-choices-banner");
+      if ([...banner.classList].includes('visible')) {
+        banner.classList.remove('visible')
+      } else {
+        banner.classList.add('visible')
+      }
+    }
+
     document.getElementById("simpleForm").addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the default form submission
       // Get form values
