@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Tag Manager Demo</title>
+
+  <link rel="stylesheet" href="style.css">
+
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -15,26 +18,83 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NG9F8RMN');</script>
   <!-- End Google Tag Manager -->
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 
 <body>
-  <form id="simpleForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <input type="submit" value="Submit">
-  </form>
+  <main>
+    <section>
+      <form id="simpleForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="site-footer">
+    <div class="site-footer-inner container">
+      <div class="footer-top">
+        <div class=""><a href="https://store.metagenics.com/"><img
+              src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/metagenics-logo.svg"
+              alt="Metagenics"></a></div>
+        <div class="join-mailing-list"><a href="https://store.metagenics.com/mailing-list" class="button outlined">JOIN
+            OUR MAILING LIST &gt;</a></div>
+      </div>
+      <div class="footer-links-block">
+        <div class="footer-links-flexbox">
+          <div class="">
+            <h6>About Metagenics</h6>
+            <a href="https://store.metagenics.com/who-we-are">Who We Are</a><br>
+            <a href="https://store.metagenics.com/join-our-movement">Careers</a><br>
+            <a href="https://store.metagenics.com/contact-us">Contact Us</a><br>
+            <a href="https://store.metagenics.com/ecommerce-support">eCommerce Support</a><br>
+          </div>
+          <div class="">
+            <h6>Legal</h6>
+            <a href="https://store.metagenics.com/terms-of-use">Terms of Use</a><br>
+            <a href="https://store.metagenics.com/subscription-orders">Subscription Orders</a><br>
+            <a href="https://store.metagenics.com/article/policies">Policies</a><br>
+            <a href="https://store.metagenics.com/estore-terms-and-conditions">eStore Terms</a><br>
+            <a href="https://store.metagenics.com/supply-chain-act">Supply Chain Act</a><br>
+          </div>
+          <div class="">
+            <h6>Privacy</h6>
+            <a href="https://store.metagenics.com/privacy-policy#privacy_policy">Privacy Policy</a><br>
+            <a href="https://store.metagenics.com/privacy-policy-california">Privacy Policy for California Residents</a>
+          </div>
+          <div class="">
+            <h6>Customer Service</h6>
+            <a href="https://store.metagenics.com/static/site_feedback/1.html">Site Feedback</a><br>
+            <a href="https://store.metagenics.com/mailing-list">Join Our Mailing List</a><br>
+          </div>
+        </div>
+        <div class="bcorp-note">
+          <div class="">
+            <a href="https://store.metagenics.com//bcorp"><img
+                src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/b-corp-logo.svg"
+                alt="Certified B-Corporation"></a><br><br>
+            <div class="socials">
+              <a href="//www.facebook.com/MetagenicsInc/" target="_blank"><img
+                  src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/facebook.svg"></a>
+              <a href="//instagram.com/metagenics/" target="_blank"><img
+                  src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/instagram.svg"></a>
+              <a href="//pinterest.com/metagenics/" target="_blank"><img
+                  src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/pinterest.svg"></a>
+              <a href="//youtube.com/channel/UCXlI4filXbBi_dMovoqh0vA" target="_blank"><img
+                  src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/youtube.svg"></a>
+              <a href="//linkedin.com/company/metagenics" target="_blank"><img
+                  src="https://www.metagenics.com/mas_assets/theme/metagenics/images/footer/linkedin.svg"></a>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"> </div>
+      <div class="fda">* These statements have not been evaluated by the Food and Drug Administration. This product is
+        not intended to diagnose, treat, cure or prevent any disease.</div>
+      <div class="copy center ">Copyright © 2024 Metagenics</div>
+    </div>
+  </footer>
 
   <script>
     document.getElementById("simpleForm").addEventListener("submit", function (event) {
