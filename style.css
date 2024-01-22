@@ -15,6 +15,88 @@ form {
   margin: 0 auto;
 }
 
+#your-privacy-choices-banner {
+  width: 70%;
+  min-height: 135px;
+  padding: 16px;
+  display: flex;
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  background-color: #f0f4f7;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  transition: visibility 0s 400ms, opacity 400ms linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#your-privacy-choices-banner.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#your-privacy-choices-banner .left {
+  width: calc((100% / 3) * 1.75);
+}
+
+#your-privacy-choices-banner .left h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#your-privacy-choices-banner .left p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#your-privacy-choices-banner .left a {
+  color: #2c5e8b;
+  font-weight: bold;
+}
+
+#your-privacy-choices-banner .right {
+  width: calc((100% / 3) * 1.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#your-privacy-choices-banner .right > div {
+  padding-inline: 16px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#your-privacy-choices-banner .right > div > label:first-of-type {
+  margin-bottom: 16px;
+}
+
+#your-privacy-choices-banner .right > div input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2c5e8b;
+}
+
+#your-privacy-choices-banner .right > button {
+  width: 30%;
+  padding: 12px 10px;
+  border: none;
+  background-color: #2c5e8b;
+  border-color: #2c5e8b;
+  color: #ffffff;
+}
+
+#your-privacy-choices-banner .right button {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#your-privacy-choices-banner .right button:hover {
+  opacity: 0.7;
+}
+
 /** footer ****/
 footer {
   margin-top: auto;
