@@ -82,7 +82,7 @@ form {
   accent-color: #2c5e8b;
 }
 
-/* #your-privacy-choices-banner .right > button {
+#your-privacy-choices-banner .right > button {
   width: 30%;
   padding: 12px 10px;
   border: none;
@@ -90,13 +90,13 @@ form {
   border-color: #2c5e8b;
   color: #ffffff;
   border-radius: 2px;
-} */
+}
 
-#your-privacy-choices-banner .right button {
+/* #your-privacy-choices-banner .right button {
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
-}
+} */
 
 #your-privacy-choices-banner .right button:hover {
   opacity: 0.7;
