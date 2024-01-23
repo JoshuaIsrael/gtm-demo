@@ -115,17 +115,20 @@
     <div class="right">
       <div>
         <label>
-          <input type="checkbox" />
-          Opt out of selling or sharing personal information
+          <input type="checkbox" id="opt-out-selling-sharing" onclick="toggleConfirmButton()"> Opt-out of selling
+          or
+          sharing personal information<br>
         </label>
         <label>
-          <input type="checkbox" />
-          Limit use of sensitive information
+          <input type="checkbox" id="limit-use-sensitive-info" onclick="toggleConfirmButton()"> Limit use of
+          sensitive
+          information<br>
         </label>
       </div>
-      <button onclick="toggleBanner()">
+      <!-- <button onclick="toggleBanner()">
         Confirm
-      </button>
+      </button> -->
+      <button id="confirm-button">Confirm</button>
     </div>
   </div>
 
@@ -138,6 +141,23 @@
         banner.classList.add('visible')
       }
     }
+
+    function toggleConfirmButton() {
+            var confirmButton = document.getElementById("confirm-button");
+            var optOutSellingSharing = document.getElementById("opt-out-selling-sharing");
+            var limitUseSensitiveInfo = document.getElementById("limit-use-sensitive-info");
+
+            if (optOutSellingSharing.checked || limitUseSensitiveInfo.checked) {
+                confirmButton.style.display = "block";
+            } else {
+                confirmButton.style.display = "none";
+            }
+        }
+
+        document.getElementById("privacy-policy-link").addEventListener("click", function () {
+            // Redirect to your Privacy Policy page
+            window.location.href = "your-privacy-policy-link";
+        });
 
     document.getElementById("simpleForm").addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the default form submission
