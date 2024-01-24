@@ -114,17 +114,21 @@
       </p>
     </div>
     <div class="right">
-      <label>
-        <input type="checkbox" />
-        Opt out of selling or sharing personal information
-      </label>
-      <label>
-        <input type="checkbox" />
-        Limit use of sensitive information
-      </label>
-      <button onclick="toggleBanner()">
-        Confirm
-      </button>
+      <div class="label-container">
+        <label>
+          <input type="checkbox" />
+          Opt out of selling or sharing personal information
+        </label>
+        <label>
+          <input type="checkbox" />
+          Limit use of sensitive information
+        </label>
+      </div>
+      <div class="button-container">
+        <button onclick="toggleBanner()">
+          Confirm
+        </button>
+      </div>
     </div>
     <div>
       <svg id="close-button" onclick="toggleBanner()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 50 50">
